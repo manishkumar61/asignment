@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.demo {
+    margin-left: 52px;
+}
+
+.services {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 48px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 700;
+    color: #343434;
+    margin-bottom: 20px;
+}
+
+.services .text-services {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+.card i {
+    margin-right: 132px;
+    font-size: 50px;
+    color: #c94b7b;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 2px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services h2 {
+        font-size: 34px;
+        margin-bottom: 5px;
+    }
+
+    .services .text-services {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+    }
+    .demo{
+        margin-left: 30px;
+    }
+    .title{
+       
+        padding-bottom: 27px;
+    }
+}
+
+
+/* new css */
+
+
+
+.rowtvparrent{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tvrowimages{
+    width:80px;
+    height: 140px;
+    border: 1px solid red;
+}
+
+.tvrowdeta{
+    width: 200px;
+    height: 140px;
+    border: 1px solid green;
+
+}
+
+.tvrowbtn{
+  width: 150px;
+  height: 140px;
+  border: 1px solid black;
+}
+
+/* new css */
+.card1 {
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 .card1-body {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+}
+
+.card1 header {
+    flex: 100%;
+}
+
+.card1 .meta {
+    margin-bottom: 22px;
+}
+
+.card1 .chips {
+    align-self: flex-end;
+}
+
+.card1 .featured-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+    .card1 {
+        flex-direction: row;
+        max-height: 279px;
+    }
+
+    .card1 h3 {
+        font-size: calc(100% + 1vw);
+    }
+
+    .card1 .featured-image {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+        max-width: 390px;
+        max-height: 279px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .card1 h3 {
+        font-size: 32px;
+    }
+}
+
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #222;
+    margin: 0.5em 0;
+    text-align: none;
+}
+
+
+
+
+.pre-heading {
+    color: #444;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.meta {
+    color: #555;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.author {
+    text-transform: uppercase;
+}
+
+ul {
+    display: block;
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.chips {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: none;
+}
+
+.chips::-webkit-scrollbar {
+    display: none;
+}
+
+.chip {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    white-space: nowrap;
+    color: white;
+    background: rgb(242 80 93);
+    border-radius: 25px;
+    margin-right: 8px;
+    padding: 5px 12px;
+    max-height: 32px;
+}
+
+.chip.large {
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid #E0E0E0;
+    background: white;
+    padding: 10px 15px;
+    max-height: 44px;
+}
+
+.chip input {
+    margin-bottom: 0 !important;
+    height: 22px !important;
+    background-color: transparent !important;
+    padding: 3px 0 0 0 !important;
+}
+
+.chip input::placeholder {
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a.chip {
+    cursor: pointer;
+}
+
+a.chip:hover,
+a.chip:visited,
+a.chip:active {
+    color: white;
+}
+
+a.chip.large:visited,
+a.chip.large:hover,
+a.chip.large:active {
+    color: black;
+}
+.test {
+width: 60%;
+display: inline;
+overflow: auto;
+white-space: nowrap;
+margin: 0px auto;
+}
